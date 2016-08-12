@@ -1,7 +1,12 @@
 
 Title : <%= @idea.title %></br>
-Description: <%= @idea.description %>
-
+Description: <%= @idea.description %><br/>
+Planned to: <%= @idea.planned_to %>
+<br/>
+<br/>
+<%= link_to "Back to idea list", ideas_path %>
+<br/>
+<%= link_to "Edit Idea", edit_idea_path %>
 <br/>
 
-<a href="<%= ideas_path %>">Back to idea list</a>
+<%= link_to "Delete Idea", idea_path(@idea), method: :delete %>

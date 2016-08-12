@@ -2,10 +2,11 @@
 <% @ideas.each do |idea| %>
 	<br/>
 	<li>
-	<a href="<%= idea_path(idea) %>"><%= idea.title %></a>
+	<%= link_to idea.title, idea_path(idea) %>
 	<%= idea.description %>
+	<%= idea.planned_to %>
 	</li>
 <%end%>
 
 <br/>
-<a href="<%= ideas_new_path %>">Create to new idea </a>
+<%= link_to "Crate new idea", ideas_new_path %>
