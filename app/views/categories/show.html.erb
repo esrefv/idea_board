@@ -1,5 +1,6 @@
+<h1> <%= @category.title %></h1>
 
-<% @ideas.each do |idea| %>
+<% @category.ideas.each do |idea| %>
 	<br/>
 	<li>
 	<%= link_to idea.title, idea_path(idea) %>
@@ -8,9 +9,3 @@
 	<b>Category: </b><%= idea.category.title %>
 	</li>
 <%end%>
-
-<br/>
-<%= link_to "Crate new idea", new_idea_path %>
-<br/>
-<br/>
-<%= link_to "List Categories", categories_path %>

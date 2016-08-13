@@ -1,0 +1,9 @@
+<h1>Listing Categories</h1>
+
+<% @categories.each do |c| %>
+	<li>
+	<%= link_to c.title, category_path(c) %><br/><br/>
+	</li>
+<%end%>
+
+<br/><%= link_to "Back to idea list", ideas_path %>
