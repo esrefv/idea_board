@@ -15,7 +15,9 @@ Planned to: <input type="text" name="planned_to" value="<%= @idea.planned_to%>">
 	<%= f.label :description%><br>
 	<%= f.text_area :description, placeholder: 'description', rows: 10 %><br><br>
 	<%= f.label :planned_to%><br>
-	<%= f.date_select :planned_to %><br><br>
+	<%= f.date_select :planned_to, start_year: Date.today.year, end_year: 2050 %><br><br>
+	<%= f.select :category_id, @categories %><br><br>
+
 	<%= f.submit 'Gonder'%>
 <% end %>
 <!--

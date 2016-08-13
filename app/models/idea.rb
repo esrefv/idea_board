@@ -20,4 +20,8 @@ class Idea < ApplicationRecord
 			errors.add(:planned_to, "gecmise planlanamaz")
 		end
 	end
+
+	def category
+		Category.find(category_id)
+	end
 end

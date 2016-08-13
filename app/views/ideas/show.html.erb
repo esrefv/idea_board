@@ -1,14 +1,14 @@
 
 <br/><br/>	
-Display Idea <br/><br/>
+Display Idea <br/>
 Title : <%= @idea.title %></br>
 Description: <%= @idea.description %><br/>
-Planned to: <%= @idea.planned_to %>
-<br/>
-<br/>
+Planned to: <%= @idea.planned_to %><br/>
+Category: <%= @idea.category.title%><br/>
+<br/><br/>
+
 <%= link_to "Back to idea list", ideas_path %>
 <br/>
 <%= link_to "Edit Idea", edit_idea_path %>
 <br/>
-
-<%= link_to "Delete Idea", idea_path(@idea), method: :delete %>
+<%= link_to "Delete Idea", idea_path(@idea), method: :delete, data:{confirm: "Emin misiniz?"}%>

@@ -3,8 +3,9 @@
 	<br/>
 	<li>
 	<%= link_to idea.title, idea_path(idea) %>
-	<%= idea.description %>
-	<%= idea.planned_to %>
+	<b>Description: </b><%= idea.description %>
+	<b>Planned to: </b><%= idea.planned_to %>
+	<b>Category: </b><%= idea.category.title %>
 	</li>
 <%end%>
 
