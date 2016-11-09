@@ -7,9 +7,13 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 Category.create(title: "Genel", desc: "Genel katagorimiz burasıdır.", color: "red")
 Category.create(title: "RoR", desc: "Ruby on Rails karegorisi burasıdır.", color: "green")
+Category.create(title: "Ruby", desc: "Ruby karegorisi burasıdır.", color: "green")
+Category.create(title: "Rails", desc: "Rails karegorisi burasıdır.", color: "red")
 
 Idea.create(title: "Züper Fikir", description: "Süper züper fikir")
 Idea.create(title: "Süper Fikir", description: "Bence bilişim terimleri tekrar düzenlensin")
 Idea.create(title: "Deneme", description: "Test description.")
+Idea.create(title: "Deneme2", description: "Test2 description.")
+Idea.create(title: "Deneme3", description: "Test3 description.")
 
 puts "Seed data create"
