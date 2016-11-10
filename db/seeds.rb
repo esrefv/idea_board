@@ -22,4 +22,9 @@ Idea.create(title: "Deneme4", description: "Test4 description.")
 Idea.create(title: "Deneme5", description: "Test5 description.")
 Idea.create(title: "Deneme6", description: "Test6 description.")
 
+
+Idea.create(title: "Test1", description: "description1.")
+Idea.create(title: "Test2", description: "description2.")
+Idea.create(title: "Test3", description: "description3.")
+Idea.create(title: "Test4", description: "description4.")
 puts "Seed data create"
