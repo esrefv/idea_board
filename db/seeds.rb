@@ -26,5 +26,4 @@ Idea.create(title: "Deneme4", description: "Test4 description.", category:c3)
 Idea.create(title: "Deneme5", description: "Test5 description.", category:c6)
 
 
-
 puts "Seed data create"
