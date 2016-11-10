@@ -24,3 +24,4 @@ Things you may want to cover:
 * ...
 
 Buda idea board read me pull request oluşturulacak.
+#Yine bir bitbucket denemesi ile karşınızdayız 2. :D 
